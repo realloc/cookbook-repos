@@ -1,7 +1,7 @@
 name             "repos"
 maintainer       "Stanislav Bogatyrev"
 maintainer_email "realloc@realloc.spb.ru"
-license          "All rights reserved"
+license          "Apache 2.0"
 description      "Installs/Configures package repositories"
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 recipe           "repos","Adds repos from 'repos' attribute"
