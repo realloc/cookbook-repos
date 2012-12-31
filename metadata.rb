@@ -9,6 +9,7 @@ recipe           "percona","Adds Percona Server repo"
 recipe           "opscode-chef-10","Adds OpsCode Chef-10 repo"
 recipe           "backports", "Adds Debian backports repo"
 recipe           "jenkins-debian-glue", "Adds jenkins-debian-glue repo"
+recipe           "deb-multimedia", "Adds Debian-Multimedia.org repo"
 version          "0.0.2"
 %w{ ubuntu debian }.each do |os|
   supports os

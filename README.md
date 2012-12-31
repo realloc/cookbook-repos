@@ -29,3 +29,8 @@ Example use of 'repos' attribute
 
     run_list("recipe[repos]")
     override_attributes( "repos" => ['jenkins-debian-glue', 'backports'] )
+
+TODO
+====
+
+* Mirrors
