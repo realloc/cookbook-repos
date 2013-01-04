@@ -10,7 +10,7 @@ when "wheezy"
   end
 
   apt_repository "mozilla-iceweasel" do
-    uri repo_uri "http://mozilla.debian.net/"
+    uri "http://mozilla.debian.net/"
     distribution "experimental"
     components [ node["repo"]["iceweasel"]["version"] ]
     deb_src false
