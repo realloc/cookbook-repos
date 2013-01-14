@@ -5,7 +5,7 @@
 
 case node['platform_family']
 when "debian"
-  apt_repository "debian-backports" do
+  apt_repository "virtualbox" do
     uri "http://download.virtualbox.org/virtualbox/debian"
     distribution node['lsb']['codename']
     components ["contrib", "non-free"]

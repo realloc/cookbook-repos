@@ -13,7 +13,8 @@ recipe           "deb-multimedia", "Adds Debian-Multimedia.org repo"
 recipe           "virtualbox", "Adds Oracle's Debian repo for VirtualBox"
 recipe           "iceweasel","Iceweasel from mozilla.debian.net"
 recipe           "emacs-snapshot","Adds repos with emacs snapshots for Debian"
-recipe           "debian","Debin mirrors"
+recipe           "debian","Debian mirrors"
+recipe           "x230t","Packages for use with my Lenovo ThinkPad x230 Tablet"
 
 version          "0.0.3"
 %w{ ubuntu debian }.each do |os|
