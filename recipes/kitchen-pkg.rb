@@ -6,7 +6,7 @@
 case node['platform']
 when "debian"
   apt_repository "kitchen-pkg" do
-    uri " http://192.168.33.1/chef/repos/debian"
+    uri "http://192.168.33.1/chef/repos/debian"
     distribution "/"
     deb_src false
   end
