@@ -10,6 +10,7 @@ supplied with this cookbook.
 
 Platform
 ============
+
 * Debian/Ubuntu
 
 Attributes
@@ -29,11 +30,9 @@ directly to run_list, include from your wrapper-cookbook or use
 data-driven approach and enumerate desired repos in 'repos' attribute
 anywhere you want.
 
-When you just need to add imple package source without additional
+When you just need to add simple package source without additional
 actions like pinning, just add attribute hash describing repo in
 node["repos"] list.
-
-When 
 
 Example use of run_list:
 
