@@ -14,7 +14,6 @@ recipe           "virtualbox", "Adds Oracle's Debian repo for VirtualBox"
 recipe           "iceweasel","Iceweasel from mozilla.debian.net"
 recipe           "emacs-snapshot","Adds repos with emacs snapshots for Debian"
 recipe           "debian","Debian mirrors"
-recipe           "x230t","Packages for use with my Lenovo ThinkPad x230 Tablet"
 recipe           "kitchen-pkg","Local Chef Kitchen repo"
 
 version          "0.0.3"
