@@ -11,7 +11,7 @@ node['repos'].each do |repo|
     when "apt" then
       apt_repository repo["name"] do
         %w{uri distribution components arch deb_src
-           keyserver key cookbook cache_rebuild}.each do |attr|
+           keyserver key cookbook cache_rebuild ignore_failure}.each do |attr|
           send(attr, repo[attr])  if repo[attr]
         end
       end
