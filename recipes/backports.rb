@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: repos
-# Recipe:: backoports
+# Recipe:: backports
 #
 
 case node['platform']

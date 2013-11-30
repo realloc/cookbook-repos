@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: repos
-# Recipe:: debian
+# Recipe:: debian-backports
 #
 
 repo_uri='http://cdn.debian.net/debian/'
@@ -19,9 +19,9 @@ end
 
 case node['platform']
 when "debian"
-  apt_repository "debian" do
+  apt_repository "debian-backports" do
     uri repo_uri
-    distribution "#{node['lsb']['codename']}"
+    distribution "#{node['lsb']['codename']}-backports"
     components ["main", "contrib", "non-free"]
     deb_src true
   end
