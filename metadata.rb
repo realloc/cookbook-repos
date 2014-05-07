@@ -15,6 +15,8 @@ recipe           "iceweasel","Iceweasel from mozilla.debian.net"
 recipe           "emacs-snapshot","Adds repos with emacs snapshots for Debian"
 recipe           "debian","Debian mirrors"
 recipe           "kitchen-pkg","Local Chef Kitchen repo"
+recipe           "ci-clodo2", "Adds Clodo2 repo"
+recipe           "riak", "Adds Riak repo"
 
 version          "0.0.3"
 %w{ ubuntu debian }.each do |os|
