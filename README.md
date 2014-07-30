@@ -54,6 +54,28 @@ Example use of repo hash:
       },
     ]
 
+Pinnig
+======
+
+To pin down packages and repositories you can use pin_priority attribute of repository and preferences array like this:
+  
+    "repos" =>[
+        { 'type' => 'apt',
+          'name' => 'wheezy-backports',
+          'pre_packages' => ["debian-keyring"],
+          'uri' => 'http://http.debian.net/debian',
+          'distribution' => 'wheezy-backports',
+          'components' => ['main'],
+          'pin_priority' => '99',
+          'preferences' => [{
+              "packages" => ["rsyslog", "rsyslog-relp", "librelp0", 'libestr0', 'libjson-c2', 'liblogging-stdlog0'],
+              "pin_priority" => "501"
+          }]
+        }
+    ]
+
+To install some packages before setting up repository (like debian-keyring) use pre_packages attribute.
+
 TODO
 ====
 
